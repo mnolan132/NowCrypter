@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 
 export const Nav = () => {
   return (

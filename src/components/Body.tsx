@@ -1,5 +1,5 @@
 // Body.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import EncryptTab from "./EncryptTab";
 import DecryptTab from "./DecryptTab";

@@ -28,14 +28,14 @@ const EncryptTab: React.FC<EncryptTabProps> = ({
   setInputText,
   encryptedOutput,
   setEncryptedOutput,
-  encryptedText,
+
   handleEncryptText,
   customKey,
   setCustomKey,
 }) => {
   const [useCustomKey, setUseCustomKey] = useState(false);
   const toast = useToast();
-  const { hasCopied, onCopy } = useClipboard(encryptedOutput);
+  const { onCopy } = useClipboard(encryptedOutput);
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputText(event.target.value);

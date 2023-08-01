@@ -26,7 +26,7 @@ const DecryptTab: React.FC<DecryptTabProps> = ({
 }) => {
   const [useCustomKey, setUseCustomKey] = useState(false);
   const toast = useToast();
-  const { hasCopied, onCopy } = useClipboard(decryptedOutput);
+  const { onCopy } = useClipboard(decryptedOutput);
 
   const handleEncryptedTextChange = (event: ChangeEvent<HTMLInputElement>) => {
     setEncryptedText(event.target.value);
